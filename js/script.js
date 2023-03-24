@@ -26,10 +26,10 @@ gameIntroduction.addEventListener("transitionend", () => {
 });
 
 function x(e) {
-    if(e.target.classList.contains('ans1')) {
+    if (e.target.classList.contains('ans1')) {
         message = "wrong. "; 
     } else {
-         message = "";
+         message = ""; // display whatever msg you want
     }
     message+= "this is reality. you are now floating in the boundless, three-dimensional continuum where objects can have relative positions, directions and size - aka space";
     main.innerHTML = message;
@@ -38,13 +38,37 @@ function x(e) {
     ans2.innerText = "dark"
     bothAns.forEach(btn => btn.removeEventListener("click", x));
     // document.body.style.background = `black`;
-    ans1.addEventListener('click', lookLeft)
+    ans1.addEventListener('click', lightFunc)
+    message = "";
+    //ans2.addEventListener("click", darkFunc) 
 }
 
-function lookLeft(e) {
+function lightFunc(e) {
+    question.innerText = "you veer towards the first speck of light in the vast darkness and render unconcious, you awake in a seemingly different dimension. You find yourself in a room full of mirrors"
+    main.innerHTML = message;
+    if (e.target.classList.contains("ans1")) {
+        message = "you explore the mirror parallel";
+    } else {
+        message = "break the mirrors to escape";
+    }
+    ans1.innerText = "explore";
+    ans2.innerText = "escape"
+    bothAns.forEach(btn => btn.removeEventListener("click", lightFunc));
+    ans1.addEventListener("click", exploreFunc);
+    message = "";
+}
 
+function exploreFunc(e) {
+    question.innerText = "testing explore function";
+    main.innerHTML = message;
+    if (e.target.classList.contains("ans1")) {
+        message = "answer1 to explore func"
+    } else {
+        message = "answer2"
+    }
 }
 
 bothAns.forEach(btn => btn.addEventListener("click", x));
+
 
 
