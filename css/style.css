@@ -23,7 +23,7 @@ button {
     color: black;
 }
 
-.game-start-intro {
+/* .game-start-intro {
     visibility: hidden;
     text-align: center;
     font-family: Gruppo;
@@ -35,6 +35,13 @@ button {
     visibility: visible;
     opacity: 1;
     transition-delay: 0s;
+} */
+
+.main {
+    text-align: center;
+    color: black;
+    font-family: Gruppo;
+
 }
 
 .introduction.hide {
