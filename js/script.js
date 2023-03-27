@@ -52,9 +52,37 @@ function exploreLightFunc(e) {
     ans2.innerText = "escape"
     bothAns.forEach(btn => btn.removeEventListener("click", exploreLightFunc)); // removes click event
     ans1.addEventListener("click", exploreMirrorFunc);
-    message = ""; // removes messag
+    ans2.addEventListener("click", escapeMirrorFunc);
+    message = ""; // removes message
 }
 
+function escapeMirrorFunc(e) {
+    question.innerText = "the thought of being trapped for eternity leads you to smash through the floor, you begin falling through darkness. You begin to feel heat, but know how intense heat could be. Do you..."
+    if (e.target.classList.contains("ans1")) {
+        main.innerHTML = message;
+    } else {
+        main.innerHTML = message;
+    }
+    ans1.innerText = "find warmth";
+    ans2.innerText = "veer towards the cold";
+    ans1.addEventListener("click", warmFunc);
+    ans2.addEventListener("click", coldFunc);
+    message = "";
+}
+
+function warmFunc(e) {
+    question.innerText = "test"
+    if (e.target.classList.contains("ans1")) {
+        main.innerHTML = message;
+    } else {
+        main.innerHTML = message;
+    }
+    ans1.innerText = "test1";
+    ans2.innerText = "test2";
+    ans1.addEventListener("click", func);
+    ans2.addEventListener("click", func);
+    message = "";
+}
 function exploreMirrorFunc(e) {
     question.innerText = "you explore the boundless reflections as you lose track of time. You don't realize you've been searching for a way out for months, you see yourself and your past through the reflections in your prior life. You barely recognize yourself in the mirrors. Do you...";
     main.innerHTML = message;
@@ -94,7 +122,12 @@ function childHomeFunc(e) {
     }
     ans1.innerText = "see who it is!";
     ans2.innerText = "hide!";
+    ans1.removeEventListener("click", childHomeFunc)
+    ans1.removeEventListener("click", breakMirrorFunc)
+    ans1.removeEventListener("click", childHomeFunc)
+
     ans1.addEventListener("click", startQues);
+
     message = "";
 }
 
