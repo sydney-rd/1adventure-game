@@ -1,0 +1,32 @@
+.text {
+    text-align: center;    
+    font-family: Gruppo;
+    color: black;
+    margin-top: 23rem;
+    text-shadow: 1px 1px 2px white;
+    font-size: 23px;
+    margin: 20% 20%;
+}
+
+.btnContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;  
+}
+
+button {
+    font-family: Gruppo;
+    color: white;
+    text-shadow: 5px 15px 15px purple, 0 0; 
+    font-size: 18px;
+    padding: 5px;
+    background-color: black;
+}
+
+
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+
