@@ -25,7 +25,7 @@ gameIntroduction.addEventListener("transitionend", () => {
   gameIntroduction.parentNode.removeChild(gameIntroduction);
 });
 
-function x(e) {
+function startQues(e) {
     if (e.target.classList.contains('ans1')) {
         message = "wrong. "; 
     } else {
@@ -36,7 +36,7 @@ function x(e) {
     question.innerText = "float towards the light or towards the darkness";
     ans1.innerText = "light"
     ans2.innerText = "dark"
-    bothAns.forEach(btn => btn.removeEventListener("click", x));
+    bothAns.forEach(btn => btn.removeEventListener("click", startQues));
     // document.body.style.background = `black`;
     ans1.addEventListener('click', lightFunc)
     message = "";
@@ -44,31 +44,49 @@ function x(e) {
 }
 
 function lightFunc(e) {
-    question.innerText = "you veer towards the first speck of light in the vast darkness and render unconcious, you awake in a seemingly different dimension. You find yourself in a room full of mirrors"
-    main.innerHTML = message;
+    question.innerText = "you veer towards the first speck of light in the vast darkness and render unconcious, you awake in a seemingly different dimension. You find yourself in a room full of mirrors. Do you..."
     if (e.target.classList.contains("ans1")) {
-        message = "you explore the mirror parallel";
+        message = "you explore the mirror parallel"; // doesn't show up
+        main.innerHTML = message;
+
     } else {
         message = "break the mirrors to escape";
+        main.innerHTML = message;
+
     }
     ans1.innerText = "explore";
     ans2.innerText = "escape"
-    bothAns.forEach(btn => btn.removeEventListener("click", lightFunc));
+    bothAns.forEach(btn => btn.removeEventListener("click", lightFunc)); // removes click event
     ans1.addEventListener("click", exploreFunc);
-    message = "";
+    message = ""; // removes messag
 }
 
 function exploreFunc(e) {
-    question.innerText = "testing explore function";
+    question.innerText = "you explore the boundless reflections as you lose track of time. You don't realize you've been searching for a way out for months, you see yourself and your past through the reflections in your prior life. You barely recognize yourself in the mirrors. Do you...";
     main.innerHTML = message;
     if (e.target.classList.contains("ans1")) {
-        message = "answer1 to explore func"
+        message = "you want to break through the glass"
     } else {
-        message = "answer2"
+        message = "you lie hopeless"
+    }
+    ans1.innerText = "break the mirror";
+    ans2.innerText = "becomed filled with despair";
+    bothAns.forEach(btn => btn.removeEventListener("click", lightFunc));
+    ans1.addEventListener("click", breakFunc);
+    message = "";
+}
+
+function breakFunc(e) {
+    question.innerText = "you smash through and instantly are transported back to something familiar...this looks like my childhood home"
+    main.innerHTML = message;
+    if (e.target.classList.contains("ans1")) {
+        message = "this is a trick..."
+    } else {
+        message = "i've woken up from this nightmare!!"
     }
 }
 
-bothAns.forEach(btn => btn.addEventListener("click", x));
+bothAns.forEach(btn => btn.addEventListener("click", startQues));
 
 
 
