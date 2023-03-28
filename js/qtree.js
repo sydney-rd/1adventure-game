@@ -32,7 +32,7 @@ const tree = {
     2 : new Screen(
         "LEVEL 1",
         "you find yourself walking towards a new city after a long night of exploration. stay the night or continue the journey", 
-        "https://t4.ftcdn.net/jpg/02/32/93/59/360_F_232935902_fxUVHXwZzzRw9jUXQP3KKHPfGD1LRhGx.jpg",
+        "https://i.pinimg.com/originals/68/31/45/6831454cf213ed7ffa541fe666fa9cf8.gif",
         new Answer("stay", 3), 
         new Answer("journey", 3), // change num
         "cover",
@@ -40,7 +40,7 @@ const tree = {
     3 : new Screen(
         "LEVEL 2",
         "you walk through the streets and come across this ferris wheel. do you take the ride?",
-        "https://wallpapers.com/images/hd/city-pixel-art-wkrsw6j3ogs1y29b.jpg",
+        "https://giffiles.alphacoders.com/200/200557.gif",
         new Answer("yes", 4),
         new Answer("no", 4), // change number
         "cover",
@@ -55,33 +55,34 @@ const tree = {
     ),
     5: new Screen(
         "LEVEL 4",
-        "your hiding is no use! you are abducted and find yourself shooting in the sky ",
-        "https://art.pixilart.com/9ec64f6f878fa26.gif",
-        new Answer("go towards the warmth", 5),
-        new Answer("go towards the cold", 5), // change number
+        "your hiding is no use! you are abducted and find yourself shooting in the sky with the aliens. do you befriend them?",
+        "https://art.pixilart.com/f1d0006f2eb0807.gif",
+        new Answer("best friends", 6),
+        new Answer("enemies", 5), // change number, floating in space
         "100% 100%",
     ),
     6: new Screen(
         "LEVEL 5",
-        "you follow and eventually find a calm, still hot spring. Do you go in?",
-        "https://thumbs.gfycat.com/SpottedAcceptableImperialeagle-size_restricted.gif",
-        new Answer("dive in", 6),
-        new Answer("test the waters first", 6), // change number
-        "cover",
+        "because you are kind to other life forces, they allow you to choose which planet you will be dropped off in",
+        "https://i.pinimg.com/originals/ef/e9/26/efe926ee0e98525d7d1567a54ad3e39f.gif",
+        new Answer("neptune", 7),
+        new Answer("jupiter", 6), // change number
+        "contain",
     ),
     7: new Screen(
         "LEVEL 6",
-        "you dive in and whoops, you've now entered another parallel, welcome! You now must escape the desert and its elements. After miles of exploration, you discover a plane. You understand there is someone else here.",
-        "https://spacecoastdaily.com/wp-content/uploads/2018/06/Mars-Curiosity-Rover-580-8.gif",
-        new Answer("hop on board", 7),
-        new Answer("explore the desert", 7), // change number
+        "you have arrived in neptune, the bluest planet of all. i hope you know how to swim VERY well...",
+        "https://media.tenor.com/rE3oG2nBCOgAAAAd/neptune-planet.gif",
+        new Answer("Im a great swimmer", 8),
+        new Answer("Not the best swimmer", 9), // change number
         "cover",
     ),
     8: new Screen(
         "LEVEL 7",
-        "as you are looking around the plane, you begin to have intense flashbacks. Your memory is beginning to come back of what has happened to you",
-        "https://cdn.pixabay.com/photo/2016/07/09/13/53/aircraft-1506313__340.jpg",
-        new Answer("continue recalling these memories", 2),
+        "thank goodness you are a great swimmer, they say. get ready for your space walk!",
+        "https://i.pinimg.com/originals/71/b0/21/71b021d18cbe5b9f6bbf9f2b8f000d59.gif",
+        new Answer("dive in", 2),
+        new Answer("cautiously approach", 2),
         "cover",
     ),
     9: new Screen(
