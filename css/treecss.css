@@ -1,32 +1,40 @@
 .text {
     text-align: center;    
-    font-family: Gruppo;
-    color: black;
-    margin-top: 23rem;
-    text-shadow: 1px 1px 2px white;
-    font-size: 23px;
-    margin: 20% 20%;
+    font-family: 'Gruppo', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    font-size: 1.5rem;
+    margin: 18% 18%;
+}
+
+.main_title {
+    padding-top: 3rem;
+    color: red;
+    font-family: 'Games', sans-serif;                                              
+    text-align: center;
+    text-shadow: 5px 5px 5px darkred;
+
 }
 
 .btnContainer {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;  
+    justify-content: space-evenly;
 }
 
 button {
-    font-family: Gruppo;
+    font-family: 'ArcadeClassic', sans-serif;                                          
     color: white;
-    text-shadow: 5px 15px 15px purple, 0 0; 
-    font-size: 18px;
-    padding: 5px;
+    font-size: 1.5rem;
+    padding: 10px 15px 10px 15px;
     background-color: black;
+    text-shadow: 5px 5px 5px black;
+
 }
 
+button:hover {
+    background-color: transparent;
+}
 
-body {
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
   
 
