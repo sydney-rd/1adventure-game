@@ -36,5 +36,30 @@ button:hover {
     background-color: transparent;
 }
 
+.glitch {
+  animation: glitch 0.5s linear infinite;
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0px, 0px) skew(0deg);
+  }
+  20% {
+    transform: translate(-5px, -5px) skew(1deg);
+  }
+  40% {
+    transform: translate(5px, -5px) skew(-1deg);
+  }
+  60% {
+    transform: translate(-5px, 5px) skew(1deg);
+  }
+  80% {
+    transform: translate(5px, 5px) skew(-1deg);
+  }
+  100% {
+    transform: translate(0px, 0px) skew(0deg);
+  }
+}
+
   
 
