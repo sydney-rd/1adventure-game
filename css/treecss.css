@@ -13,7 +13,6 @@
     font-family: 'Games', sans-serif;                                              
     text-align: center;
     text-shadow: 5px 5px 5px darkred;
-
 }
 
 .btnContainer {
@@ -29,7 +28,6 @@ button {
     padding: 10px 15px 10px 15px;
     background-color: black;
     text-shadow: 5px 5px 5px black;
-
 }
 
 button:hover {
@@ -46,7 +44,6 @@ button:hover {
 
 .glitch {
   animation: glitch 0.5s linear infinite;
-  background: url("https://i.makeagif.com/media/11-15-2015/iHywJQ.gif");
   overflow: hidden; /* Hide any content that may overflow the broken screen */
 }
 
