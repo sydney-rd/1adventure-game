@@ -1,10 +1,8 @@
 let button1 = document.getElementById("ans1");
 let button2 = document.querySelector("#ans2");
 
-
 // move screen_id to the global scope (also changed in the first function call to displayScreen
 let screen_id = 1
-
 
 // data structure
 class Screen {
@@ -16,9 +14,8 @@ class Screen {
       this.ans2 = a2;
       this.backgroundSize = bgSize;
     }
-  }
+}
   
-
 class Answer {
     constructor(text, screen_id) {
         this.text = text;
@@ -159,6 +156,7 @@ const tree = {
 };
 
 // execution
+
 // these are here to quickly check getEventListeners in the console and should be deleted
 x = document.querySelector('#ans1')
 y = document.querySelector('#ans2')
@@ -224,14 +222,13 @@ button1.addEventListener('click', (e) => {
     } else {
         // displayScreen now pulls the screen_id from the DOM element itself, which is set on line 149 for button 1, 156 for button 2
         displayScreen(e.target.dataset.screen_id)
-        score += 1;
+        score ++;
     }
-
 });
 
 button2.addEventListener('click', (e) => {
     displayScreen(e.target.dataset.screen_id)
-    score+= 1;
+    score++;
 })
 
 // Now, every time displayScreen is run, it takes the appropriate number from the tree[screen_id].ans1 and ans2 and adds that number to the buttons as the "data-screen_id" attribute. The JS then accesses that number to plug into displayScreen when the button is clicked and moves to the right screen.
