@@ -36,30 +36,64 @@ button:hover {
     background-color: transparent;
 }
 
+.score {
+  color: white;
+  font-size: 25px;
+  text-shadow: 5px 5px 5px black;
+  font-family: '60s Scoreboard', sans-serif;
+  text-align: center;                                             
+}
+
 .glitch {
   animation: glitch 0.5s linear infinite;
+  background: url("https://i.makeagif.com/media/11-15-2015/iHywJQ.gif");
+  overflow: hidden; /* Hide any content that may overflow the broken screen */
 }
 
 @keyframes glitch {
   0% {
     transform: translate(0px, 0px) skew(0deg);
   }
-  20% {
-    transform: translate(-5px, -5px) skew(1deg);
+  5% {
+    transform: translate(2px, -2px) skew(1deg);
+  }
+  10% {
+    transform: translate(-2px, 2px) skew(-1deg);
+  }
+  15% {
+    transform: translate(0px, -2px) skew(1deg);
+  }
+  25% {
+    transform: translate(-2px, -2px) skew(1deg);
   }
   40% {
-    transform: translate(5px, -5px) skew(-1deg);
+    transform: translate(2px, 0px) skew(-1deg);
+  }
+  45% {
+    transform: translate(0px, 2px) skew(1deg);
+  }
+  50% {
+    transform: translate(0px, -2px) skew(-1deg);
   }
   60% {
-    transform: translate(-5px, 5px) skew(1deg);
+    transform: translate(2px, -2px) skew(-1deg);
+  }
+  65% {
+    transform: translate(2px, 0px) skew(1deg);
+  }
+  75% {
+    transform: translate(0px, -2px) skew(1deg);
   }
   80% {
-    transform: translate(5px, 5px) skew(-1deg);
+    transform: translate(0px, 2px) skew(-1deg);
+  }
+  90% {
+    transform: translate(-2px, 2px) skew(-1deg);
+  }
+  95% {
+    transform: translate(0px, 0px) skew(1deg);
   }
   100% {
-    transform: translate(0px, 0px) skew(0deg);
+    transform: translate(0px, 0px) skew(-1deg);
   }
 }
-
-  
-
