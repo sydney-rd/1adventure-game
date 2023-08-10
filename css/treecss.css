@@ -1,37 +1,37 @@
 .text {
-    text-align: center;    
-    font-family: 'Gruppo', sans-serif;
-    color: white;
-    text-shadow: 2px 2px 2px black;
-    font-size: 1.5rem;
-    margin: 18% 18%;
+  text-align: center;
+  font-family: 'Gruppo', sans-serif;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  font-size: 1.5rem;
+  margin: 18% 18%;
 }
 
 .main_title {
-    padding-top: 3rem;
-    color: red;
-    font-family: 'Games', sans-serif;                                              
-    text-align: center;
-    text-shadow: 5px 5px 5px darkred;
+  padding-top: 3rem;
+  color: red;
+  font-family: 'Games', sans-serif;
+  text-align: center;
+  text-shadow: 5px 5px 5px darkred;
 }
 
 .btnContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 button {
-    font-family: 'ArcadeClassic', sans-serif;                                          
-    color: white;
-    font-size: 1.5rem;
-    padding: 10px 15px 10px 15px;
-    background-color: black;
-    text-shadow: 5px 5px 5px black;
+  font-family: 'ArcadeClassic', sans-serif;
+  color: white;
+  font-size: 1.5rem;
+  padding: 10px 15px 10px 15px;
+  background-color: black;
+  text-shadow: 5px 5px 5px black;
 }
 
 button:hover {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 .score {
@@ -39,45 +39,55 @@ button:hover {
   font-size: 25px;
   text-shadow: 5px 5px 5px black;
   font-family: '60s Scoreboard', sans-serif;
-  text-align: center;                                             
+  text-align: center;
 }
 
 .glitch {
   animation: glitch 0.5s linear infinite;
-  overflow: hidden; /* Hide any content that may overflow the broken screen */
+  overflow: hidden;
 }
 
 @keyframes glitch {
   0% {
     transform: translate(0px, 0px) skew(0deg);
   }
+
   5% {
     transform: translate(2px, -2px) skew(1deg);
   }
+
   10% {
     transform: translate(-2px, 2px) skew(-1deg);
   }
+
   15% {
     transform: translate(0px, -2px) skew(1deg);
   }
+
   25% {
     transform: translate(-2px, -2px) skew(1deg);
   }
+
   60% {
     transform: translate(2px, -2px) skew(-1deg);
   }
+
   65% {
     transform: translate(2px, 0px) skew(1deg);
   }
+
   75% {
     transform: translate(0px, -2px) skew(1deg);
   }
+
   90% {
     transform: translate(-2px, 2px) skew(-1deg);
   }
+
   95% {
     transform: translate(0px, 0px) skew(1deg);
   }
+
   100% {
     transform: translate(0px, 0px) skew(-1deg);
   }
@@ -89,6 +99,7 @@ button:hover {
     background-size: cover;
     background-repeat: no-repeat;
   }
+
   .text {
     font-size: .8rem;
     margin: 8% 8%;
@@ -106,14 +117,11 @@ button:hover {
   .score {
     font-size: 18px;
     position: absolute;
-    top: 32rem; /* Adjust this value to set the desired distance from the top */
-    right: 8.8rem; /* Adjust this value to set the desired distance from the right */
+    top: 32rem;
+    right: 8.8rem;
   }
-  
-  /* Keep the button container as it is */
+
   .btnContainer {
     padding-top: 13rem;
-    /* Add any other styles for the button container as needed */
-  }}
-
-
+  }
+}
