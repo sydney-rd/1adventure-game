@@ -33,7 +33,7 @@ const tree = {
   2: new Screen(
     "LEVEL 1",
     "you find yourself walking towards a new city after a long night of exploration. stay the night or continue the journey",
-    "../assets/bgImages/Level2IMG.gif",
+    "https://raw.githubusercontent.com/sydney-rd/text-adventure-game/main/assets/bgImages/starterIMG.gif",
     new Answer("stay", 3),
     new Answer("journey", 3), // new story change num
     "cover"
