@@ -24,8 +24,8 @@ class Answer {
 const tree = {
   1: new Screen(
     "escape the labyrinth",
-    "please enter coins",
-    "../assets/bgImages/Level1IMG.gif",
+    "you can no longer escape",
+    "https://raw.githubusercontent.com/sydney-rd/text-adventure-game/main/assets/bgImages/starterIMG.gif",
     new Answer("cancel", 1),
     new Answer("start", 2),
     "cover"
@@ -35,12 +35,12 @@ const tree = {
     "you find yourself walking towards a new city after a long night of exploration. stay the night or continue the journey",
     "https://raw.githubusercontent.com/sydney-rd/text-adventure-game/main/assets/bgImages/starterIMG.gif",
     new Answer("stay", 3),
-    new Answer("journey", 3), // new story change num
+    new Answer("journey", 17),
     "cover"
   ),
   3: new Screen(
     "LEVEL 2",
-    "you walk through the streets and come across this ferris wheel. do you take the ride?",
+    "you walk through the streets and come across a ferris wheel. do you take the ride?",
     "https://raw.githubusercontent.com/sydney-rd/text-adventure-game/main/assets/bgImages/Level2IMG.gif",
     new Answer("yes", 4),
     new Answer("no", 13),
@@ -146,6 +146,14 @@ const tree = {
     "you now have enemies! they kick you out of the ship",
     "https://i.gifer.com/LEk6.gif",
     new Answer("hi"),
+    new Answer("hi"),
+    "100% 110%"
+  ),
+  17: new Screen(
+    "Level 2",
+    "you continue your journey. you need to get to your destination. it's dark and your light source runs out.",
+    "https://i.gifer.com/LEk6.gif",
+    new Answer("turn around, go back to the city and explore", 3),
     new Answer("hi"),
     "100% 110%"
   ),
