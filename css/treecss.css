@@ -63,15 +63,6 @@ button:hover {
   25% {
     transform: translate(-2px, -2px) skew(1deg);
   }
-  40% {
-    transform: translate(2px, 0px) skew(-1deg);
-  }
-  45% {
-    transform: translate(0px, 2px) skew(1deg);
-  }
-  50% {
-    transform: translate(0px, -2px) skew(-1deg);
-  }
   60% {
     transform: translate(2px, -2px) skew(-1deg);
   }
@@ -80,9 +71,6 @@ button:hover {
   }
   75% {
     transform: translate(0px, -2px) skew(1deg);
-  }
-  80% {
-    transform: translate(0px, 2px) skew(-1deg);
   }
   90% {
     transform: translate(-2px, 2px) skew(-1deg);
@@ -94,3 +82,38 @@ button:hover {
     transform: translate(0px, 0px) skew(-1deg);
   }
 }
+
+@media only screen and (max-width: 768px) {
+
+  body {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .text {
+    font-size: .8rem;
+    margin: 8% 8%;
+  }
+
+  .main_title {
+    font-size: .7rem;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 6px 10px 6px 10px;
+  }
+
+  .score {
+    font-size: 18px;
+    position: absolute;
+    top: 32rem; /* Adjust this value to set the desired distance from the top */
+    right: 8.8rem; /* Adjust this value to set the desired distance from the right */
+  }
+  
+  /* Keep the button container as it is */
+  .btnContainer {
+    padding-top: 13rem;
+    /* Add any other styles for the button container as needed */
+  }}
+
+
