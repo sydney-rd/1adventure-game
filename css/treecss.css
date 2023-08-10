@@ -2,8 +2,8 @@
   text-align: center;
   font-family: 'Gruppo', sans-serif;
   color: white;
-  text-shadow: 2px 2px 2px black;
-  font-size: 1.5rem;
+  text-shadow: 3px 3px 3px black;
+  font-size: 1.8rem;
   margin: 18% 18%;
 }
 
@@ -19,6 +19,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  margin-bottom: 1rem;
 }
 
 button {

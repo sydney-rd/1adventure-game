@@ -33,7 +33,7 @@ const tree = {
   2: new Screen(
     "LEVEL 1",
     "you find yourself walking towards a new city after a long night of exploration. stay the night or continue the journey",
-    "https://raw.githubusercontent.com/sydney-rd/text-adventure-game/main/assets/bgImages/starterIMG.gif",
+    "https://raw.githubusercontent.com/sydney-rd/text-adventure-game/main/assets/bgImages/Level1IMG.gif",
     new Answer("stay", 3),
     new Answer("journey", 17),
     "cover"
@@ -152,9 +152,9 @@ const tree = {
   17: new Screen(
     "Level 2",
     "you continue your journey. you need to get to your destination. it's dark and your light source runs out.",
-    "https://i.gifer.com/LEk6.gif",
-    new Answer("turn around, go back to the city and explore", 3),
-    new Answer("hi"),
+    "https://raw.githubusercontent.com/sydney-rd/text-adventure-game/main/assets/bgImages/Level17IMG.gif",
+    new Answer("go back to the city to explore", 3),
+    new Answer("continue on"),
     "100% 110%"
   ),
 };
