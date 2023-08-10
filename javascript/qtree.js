@@ -1,6 +1,5 @@
 let button1 = document.getElementById("ans1");
 let button2 = document.querySelector("#ans2");
-
 let screen_id = 1;
 
 // data structure
@@ -26,7 +25,7 @@ const tree = {
   1: new Screen(
     "escape the labyrinth",
     "please enter coins",
-    "https://start-game.carrd.co/assets/images/image01.gif?v=5aed0a9d",
+    "../assets/bgImages/Level1IMG.gif",
     new Answer("cancel", 1),
     new Answer("start", 2),
     "cover"
@@ -34,7 +33,7 @@ const tree = {
   2: new Screen(
     "LEVEL 1",
     "you find yourself walking towards a new city after a long night of exploration. stay the night or continue the journey",
-    "https://i.pinimg.com/originals/68/31/45/6831454cf213ed7ffa541fe666fa9cf8.gif",
+    "../assets/bgImages/Level2IMG.gif",
     new Answer("stay", 3),
     new Answer("journey", 3), // new story change num
     "cover"
@@ -42,7 +41,7 @@ const tree = {
   3: new Screen(
     "LEVEL 2",
     "you walk through the streets and come across this ferris wheel. do you take the ride?",
-    "https://giffiles.alphacoders.com/200/200557.gif",
+    "https://raw.githubusercontent.com/sydney-rd/text-adventure-game/main/assets/bgImages/Level2IMG.gif",
     new Answer("yes", 4),
     new Answer("no", 13),
     "cover"
@@ -50,7 +49,7 @@ const tree = {
   4: new Screen(
     "LEVEL 3",
     "as you are enjoying the city and its views, you notice that there is an alien invasion!",
-    "https://i.pinimg.com/originals/3a/f1/d0/3af1d082c28a0cab1c62004d74258dd2.gif",
+    "https://raw.githubusercontent.com/sydney-rd/text-adventure-game/main/assets/bgImages/Level3IMG.gif",
     new Answer("jump to escape", 16), // new story
     new Answer("hide in the ferris wheel", 5),
     "contain"
@@ -58,7 +57,7 @@ const tree = {
   5: new Screen(
     "LEVEL 4",
     "your hiding is no use! you are abducted and find yourself shooting in the sky with the aliens. do you befriend them?",
-    "https://art.pixilart.com/f1d0006f2eb0807.gif",
+    "https://raw.githubusercontent.com/sydney-rd/text-adventure-game/main/assets/bgImages/Level4IMG.gif",
     new Answer("best friends", 6),
     new Answer("enemies", 16), // change number, floating in space
     "100% 100%"
@@ -66,7 +65,7 @@ const tree = {
   6: new Screen(
     "LEVEL 5",
     "because you are kind to other life forces, they allow you to choose which planet you will be dropped off in",
-    "https://i.pinimg.com/originals/ef/e9/26/efe926ee0e98525d7d1567a54ad3e39f.gif",
+    "https://raw.githubusercontent.com/sydney-rd/text-adventure-game/main/assets/bgImages/Level5IMG.gif",
     new Answer("neptune", 7),
     new Answer("jupiter", 6), // change number
     "contain"
@@ -74,7 +73,7 @@ const tree = {
   7: new Screen(
     "LEVEL 6",
     "you have arrived in neptune, the bluest planet of all. i hope you know how to swim VERY well...",
-    "https://media.tenor.com/rE3oG2nBCOgAAAAd/neptune-planet.gif",
+    "https://raw.githubusercontent.com/sydney-rd/text-adventure-game/main/assets/bgImages/Level6IMG.gif",
     new Answer("Im a great swimmer", 8),
     new Answer("Not the best swimmer", 9), // change number
     "cover"
@@ -82,7 +81,7 @@ const tree = {
   8: new Screen(
     "LEVEL 7",
     "thank goodness you are a great swimmer, they say. get ready for your space walk!",
-    "https://i.pinimg.com/originals/71/b0/21/71b021d18cbe5b9f6bbf9f2b8f000d59.gif",
+    "https://raw.githubusercontent.com/sydney-rd/text-adventure-game/main/assets/bgImages/Level7IMG.gif",
     new Answer("dive in", 2),
     new Answer("dive in cautiously", 9),
     "cover"
@@ -90,7 +89,7 @@ const tree = {
   9: new Screen(
     "Level 8",
     "you put your ego aside and slowly leave the ship. you notice the raging waters. you ask your friends for help...",
-    "https://cdnb.artstation.com/p/assets/images/images/009/761/481/original/adrian-de-palma-aa1-adrian-de-palma-mockup-pixel-art.gif?1520772604",
+    "https://raw.githubusercontent.com/sydney-rd/text-adventure-game/main/assets/bgImages/Level8IMG.gif",
     new Answer("take a submarine", 10), // go to same storyline
     new Answer("grab scuba gear", 10), // go to same storyline
     "100% 100%"
@@ -98,15 +97,15 @@ const tree = {
   10: new Screen(
     "Level 9",
     "whoops! something sucked you into another parallel and you ended up in an underwater world!",
-    "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/52cf024e-4cc2-4480-aa9b-192e14e46400/d9icbyp-154b18c4-7427-452c-924d-e13f6ea182f4.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzUyY2YwMjRlLTRjYzItNDQ4MC1hYTliLTE5MmUxNGU0NjQwMFwvZDlpY2J5cC0xNTRiMThjNC03NDI3LTQ1MmMtOTI0ZC1lMTNmNmVhMTgyZjQuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.I_C8zTZm9bYCNIWUHuqc-IATW2MJE62OMyGyI16zQAQ",
+    "https://raw.githubusercontent.com/sydney-rd/text-adventure-game/main/assets/bgImages/Level9IMG.gif",
     new Answer("swim to the top!", 2), // restart
     new Answer("succumb", 11),
     "cover"
   ),
   11: new Screen(
     "Level 10",
-    "you say your goodbyes as 60s pass, you allow yourself to float. inevitably, you breathe in. wait huh? you can breathe underwater. you now can live your best life",
-    "https://media1.giphy.com/media/JPRruav6eMqd6uBIqr/giphy.gif?cid=6c09b952e6aedb8a96929752e599beb3973e774369401760&rid=giphy.gif&ct=g",
+    "you say your goodbyes as 60s pass. inevitably, you breathe in. wait... you can breathe underwater. you now can live your best life",
+    "https://raw.githubusercontent.com/sydney-rd/text-adventure-game/main/assets/bgImages/Level10IMG.gif",
     new Answer("restart", 1), // restarts game
     new Answer("escape", 12),
     "100% 110%"
@@ -114,7 +113,7 @@ const tree = {
   12: new Screen(
     "\n",
     "\n",
-    "https://i.gifer.com/OEJZ.gif",
+    "https://raw.githubusercontent.com/sydney-rd/text-adventure-game/main/assets/bgImages/GameOver.gif",
     new Answer("high scores"),
     new Answer("restart", 1),
     "100% 100%"
@@ -122,7 +121,7 @@ const tree = {
   13: new Screen( // new story from begining
     "Level 3",
     "you're afraid of heights. but not afraid of psychics. you pop in to get your future read. she suspects an alien abduction is in your cards",
-    "https://www.rookiemag.com/wp-content/uploads/2016/03/1456846171belton1tarot.gif",
+    "https://raw.githubusercontent.com/sydney-rd/text-adventure-game/main/assets/bgImages/Level3BIMG.gif",
     new Answer("hide in the big ferris wheel", 5),
     new Answer("don't take it seriously", 14),
     "100% 110%"
@@ -130,7 +129,7 @@ const tree = {
   14: new Screen(
     "Level 4",
     "you abandon this crazy city and head for your final destinaton. But you get lost!",
-    "https://64.media.tumblr.com/bde3235822097c8cdbabb2c962bf4ba7/c84f4ff8ff8aed05-31/s500x750/11c5919cb92987e16dc8d685bd4239cdaf4f77a6.gif",
+    "https://raw.githubusercontent.com/sydney-rd/text-adventure-game/main/assets/bgImages/Level4BIMG.gif",
     new Answer("hitch a ride", 15),
     new Answer("keep walking", 15),
     "100% 110%"
