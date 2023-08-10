@@ -159,7 +159,6 @@ const tree = {
 };
 
 // execution
-// these are here to quickly check getEventListeners in the console and should be deleted
 x = document.querySelector('#ans1')
 y = document.querySelector('#ans2')
 
@@ -178,9 +177,6 @@ function displayScreen(screen_id) {
     let user_score = document.querySelector(".score");
     user_score.innerText = `score:${score}`;
 
-    // a single conditional to set the color instead of the two lines that reset the color on every page but the intro.
-
-    // performance could be improved by changing it to check and see if the screen_id IS 1, then applying the red styling to that and leaving purple as the default in the CSS
     if ( screen_id != 1) {
         main_title.style.color = 'black'
         main_title.style.textShadow = "5px 5px 5px purple"
@@ -213,7 +209,6 @@ function displayScreen(screen_id) {
 // starts at one always
 displayScreen(screen_id);
 
-// Add event listeners to each button once when the page loads (this could be condensed into a single function that works on both buttons)
 button1.addEventListener('click', (e) => {
     if (button1.innerText == "cancel") {
         document.body.classList.add('glitch');
@@ -222,7 +217,6 @@ button1.addEventListener('click', (e) => {
         }, 1000);
         score = 0;
     } else {
-        // displayScreen now pulls the screen_id from the DOM element itself, which is set on line 149 for button 1, 156 for button 2
         displayScreen(e.target.dataset.screen_id)
         score += 1;
     }
@@ -233,8 +227,6 @@ button2.addEventListener('click', (e) => {
     displayScreen(e.target.dataset.screen_id)
     score+= 1;
 })
-
-// Now, every time displayScreen is run, it takes the appropriate number from the tree[screen_id].ans1 and ans2 and adds that number to the buttons as the "data-screen_id" attribute. The JS then accesses that number to plug into displayScreen when the button is clicked and moves to the right screen.
 
 
 
