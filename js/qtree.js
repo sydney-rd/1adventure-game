@@ -1,10 +1,8 @@
 let button1 = document.getElementById("ans1");
 let button2 = document.querySelector("#ans2");
 
-
 // move screen_id to the global scope (also changed in the first function call to displayScreen
 let screen_id = 1
-
 
 // data structure
 class Screen {
@@ -17,7 +15,6 @@ class Screen {
       this.backgroundSize = bgSize;
     }
   }
-  
 
 class Answer {
     constructor(text, screen_id) {
@@ -27,7 +24,7 @@ class Answer {
 }
 
 const tree = {
-    1 : new Screen(
+    1: new Screen(
         "escape the labyrinth",
         "please enter coins",
         "https://start-game.carrd.co/assets/images/image01.gif?v=5aed0a9d",
@@ -35,7 +32,7 @@ const tree = {
         new Answer("start", 2),
         "cover",
     ),
-    2 : new Screen(
+    2: new Screen(
         "LEVEL 1",
         "you find yourself walking towards a new city after a long night of exploration. stay the night or continue the journey", 
         "https://i.pinimg.com/originals/68/31/45/6831454cf213ed7ffa541fe666fa9cf8.gif",
@@ -43,7 +40,7 @@ const tree = {
         new Answer("journey", 3), // new story change num
         "cover",
     ),
-    3 : new Screen(
+    3: new Screen(
         "LEVEL 2",
         "you walk through the streets and come across this ferris wheel. do you take the ride?",
         "https://giffiles.alphacoders.com/200/200557.gif",
@@ -51,7 +48,7 @@ const tree = {
         new Answer("no", 13),
         "cover",
     ),
-    4 : new Screen(
+    4: new Screen(
         "LEVEL 3",
         "as you are enjoying the city and its views, you notice that there is an alien invasion!",
         "https://i.pinimg.com/originals/3a/f1/d0/3af1d082c28a0cab1c62004d74258dd2.gif",
@@ -153,8 +150,7 @@ const tree = {
         "https://i.gifer.com/LEk6.gif",
         new Answer("hi"),
         new Answer("hi"),
-        "100% 110%"
-        
+        "100% 110%"  
     )
 };
 
@@ -193,20 +189,16 @@ function displayScreen(screen_id) {
     let button1 = document.querySelector("#ans1");
     button1.innerText = screen.ans1.text;
 
-    // uses the html data-* attribute to create a custom key-value pair on the DOM element that stores the screen_id (see this for more details https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes)
     button1.dataset.screen_id = screen.ans1.screen_id
 
     // reset button two for the current screen
     let button2 = document.querySelector("#ans2");
     button2.innerText = screen.ans2.text;
-    // same dataset thing as with button 1 above
     button2.dataset.screen_id = screen.ans2.screen_id
 
-    // Background size
     document.body.style.backgroundSize = screen.backgroundSize;
 }
 
-// starts at one always
 displayScreen(screen_id);
 
 button1.addEventListener('click', (e) => {
@@ -220,7 +212,6 @@ button1.addEventListener('click', (e) => {
         displayScreen(e.target.dataset.screen_id)
         score += 1;
     }
-
 });
 
 button2.addEventListener('click', (e) => {
