@@ -19,8 +19,9 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-bottom: 1rem;
+  margin-top: -2rem;
 }
+
 
 button {
   font-family: 'ArcadeClassic', sans-serif;
@@ -29,6 +30,7 @@ button {
   padding: 10px 15px 10px 15px;
   background-color: black;
   text-shadow: 5px 5px 5px black;
+
 }
 
 button:hover {

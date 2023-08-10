@@ -153,9 +153,17 @@ const tree = {
     "Level 2",
     "you continue your journey. you need to get to your destination. it's dark and your light source runs out.",
     "https://raw.githubusercontent.com/sydney-rd/text-adventure-game/main/assets/bgImages/Level17IMG.gif",
-    new Answer("go back to the city to explore", 3),
-    new Answer("continue on"),
-    "100% 110%"
+    new Answer("turn around", 3),
+    new Answer("continue on", 18),
+    "cover"
+  ),
+  18: new Screen(
+    "Level 2",
+    "you continue your journey. you need to get to your destination. it's dark and your light source runs out.",
+    "https://raw.githubusercontent.com/sydney-rd/text-adventure-game/main/assets/bgImages/Level17IMG.gif",
+    new Answer("turn around", 3),
+    new Answer("continue on", 18),
+    "cover"
   ),
 };
 
