@@ -9,7 +9,7 @@ Please note - this project is still being improved and perfected!
 
 # How to Play
 
-A fun, small detail to notice is when you are on the home screen, Escape the Labyrinth screen will <strong>glitch<strong> if you press "cancel." This is because once you are in the game you cannot quit.
+A fun, small detail to notice is when you are on the home screen, Escape the Labyrinth screen will <strong>glitch</strong> if you press "cancel." This is because once you are in the game you cannot quit.
 
 # Run
 
