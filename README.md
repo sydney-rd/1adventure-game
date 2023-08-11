@@ -1,13 +1,20 @@
 # Text Adventure Game
 
-Go through the paths in the Escape the Labyrinth text adventure game. See where your journey leads you and try to escape with the lowest score possible! I was mostly inspired by pixel art images. 
+I created Escape the Labyrinth text adventure game, which was inspired by bright and punchy pixel art imagery.
+See where your journey leads you and try to escape with the lowest score possible!
+
+This project was built using the Data Structure, Binary Tree.
+
+Please note - this project is still being improved and perfected!
 
 # How to Play
 
-Click start game. You will notice if you hit "cancel" it glitches - this is because you can't escape the game!! Click through the options and play the game.
+A fun, small detail to notice is when you are on the home screen, Escape the Labyrinth screen will <strong>glitch<strong> if you press "cancel." This is because once you are in the game you cannot quit.
 
 # Run
 
-Use Github Pages to open the HTML
+This project is deployed on [GitHub Pages](https://sydney-rd.github.io/text-adventure-game/)
 
+# Tech Stack
 
+This project is created with JavaScript, HTML, and CSS

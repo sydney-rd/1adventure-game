@@ -40,7 +40,7 @@ const tree = {
   ),
   3: new Screen(
     "LEVEL 2",
-    "you walk through the streets and come across a ferris wheel. do you take the ride?",
+    "you walk through the city streets and come across a ferris wheel. do you take the ride?",
     "https://raw.githubusercontent.com/sydney-rd/text-adventure-game/main/assets/bgImages/Level2IMG.gif",
     new Answer("yes", 4),
     new Answer("no", 13),
@@ -48,7 +48,7 @@ const tree = {
   ),
   4: new Screen(
     "LEVEL 3",
-    "as you are enjoying the city and its views, you notice that there is an alien invasion!",
+    "you suddenly notice an alien invasion!",
     "https://raw.githubusercontent.com/sydney-rd/text-adventure-game/main/assets/bgImages/Level3IMG.gif",
     new Answer("jump to escape", 16), // new story
     new Answer("hide in the ferris wheel", 5),
@@ -56,7 +56,7 @@ const tree = {
   ),
   5: new Screen(
     "LEVEL 4",
-    "your hiding is no use! you are abducted and find yourself shooting in the sky with the aliens. do you befriend them?",
+    "you find yourself abducted and are shooting in the sky with the aliens. do you befriend them?",
     "https://raw.githubusercontent.com/sydney-rd/text-adventure-game/main/assets/bgImages/Level4IMG.gif",
     new Answer("best friends", 6),
     new Answer("enemies", 16), // change number, floating in space
@@ -151,18 +151,18 @@ const tree = {
   ),
   17: new Screen(
     "Level 2",
-    "you continue your journey. you need to get to your destination. it's dark and your light source runs out.",
+    "you continue your journey. you need to get to your destination. it's dark and your light source runs out. do you turn around and go back to the city to explore?",
     "https://raw.githubusercontent.com/sydney-rd/text-adventure-game/main/assets/bgImages/Level17IMG.gif",
     new Answer("turn around", 3),
     new Answer("continue on", 18),
     "cover"
   ),
   18: new Screen(
-    "Level 2",
-    "you continue your journey. you need to get to your destination. it's dark and your light source runs out.",
-    "https://raw.githubusercontent.com/sydney-rd/text-adventure-game/main/assets/bgImages/Level17IMG.gif",
-    new Answer("turn around", 3),
-    new Answer("continue on", 18),
+    "Level 3",
+    "you notice a sudden aura, walk towards it or escape and jump off the cliff",
+    "https://raw.githubusercontent.com/sydney-rd/text-adventure-game/main/assets/bgImages/Level18IMG.gif",
+    new Answer("JUMP!", 2),
+    new Answer("walk towards", 4),
     "cover"
   ),
 };
