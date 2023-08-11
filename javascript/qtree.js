@@ -171,7 +171,6 @@ const tree = {
 x = document.querySelector("#ans1");
 y = document.querySelector("#ans2");
 
-// init score as 0 to start
 let score = 0;
 
 function displayScreen(screen_id) {
@@ -198,13 +197,11 @@ function displayScreen(screen_id) {
   // reset the image url for the current screen
   document.body.style.background = "url(" + screen.imgurl + ")";
 
-  // reset button one for the current screen
+  // reset buttons
   let button1 = document.querySelector("#ans1");
   button1.innerText = screen.ans1.text;
-
   button1.dataset.screen_id = screen.ans1.screen_id;
 
-  // reset button two for the current screen
   let button2 = document.querySelector("#ans2");
   button2.innerText = screen.ans2.text;
   button2.dataset.screen_id = screen.ans2.screen_id;
