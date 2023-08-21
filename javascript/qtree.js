@@ -128,18 +128,19 @@ const tree = {
   ),
   14: new Screen(
     "Level 4",
-    "you abandon this crazy city and upon looking back you notice the alien invasion",
+    "you abandon this crazy city and arrive in a new, safe town but notice some strange folk",
     "https://raw.githubusercontent.com/sydney-rd/text-adventure-game/main/assets/bgImages/Level4BIMG.gif",
-    new Answer("never look back", 15),
-    new Answer("wonder what it'd be like", 6),
+    new Answer("keep to yourself", 15),
+    new Answer("introduce yourself", 15),
     "100% 110%"
   ),
   15: new Screen(
     "Level 5",
-    "oh no! you've been kidnapped. you shouldn't of trusted this part of town...",
-    "",
-    new Answer("hi"),
-    new Answer("hi")
+    "before you make your next move, a woman comes up to you. she invites you into her home for dinner",
+    "https://raw.githubusercontent.com/sydney-rd/text-adventure-game-javascript/main/assets/bgImages/Level5BIMG.gif",
+    new Answer("no thanks", 18),
+    new Answer("i am hungry...", 19),
+    "cover"
   ),
   16: new Screen(
     "Level 5",
@@ -152,6 +153,14 @@ const tree = {
   17: new Screen(
     "Level 2",
     "as you walk, you notice a sudden aura, walk towards it or escape and jump off the cliff",
+    "https://raw.githubusercontent.com/sydney-rd/text-adventure-game/main/assets/bgImages/Level18IMG.gif",
+    new Answer("JUMP!", 2),
+    new Answer("walk towards", 4),
+    "cover"
+  ),
+  19: new Screen(
+    "Level 6",
+    "You eat and she lets you stay the night.",
     "https://raw.githubusercontent.com/sydney-rd/text-adventure-game/main/assets/bgImages/Level18IMG.gif",
     new Answer("JUMP!", 2),
     new Answer("walk towards", 4),
