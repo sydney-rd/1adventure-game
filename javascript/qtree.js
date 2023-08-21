@@ -160,10 +160,26 @@ const tree = {
   ),
   19: new Screen(
     "Level 6",
-    "You eat and she lets you stay the night.",
-    "https://raw.githubusercontent.com/sydney-rd/text-adventure-game/main/assets/bgImages/Level18IMG.gif",
-    new Answer("JUMP!", 2),
-    new Answer("walk towards", 4),
+    "she lets you stay over but you decide to sneak out. uh-oh, you are too noisy and she wakes up...and she's not happy ",
+    "https://raw.githubusercontent.com/sydney-rd/text-adventure-game-javascript/main/assets/bgImages/Level6Bimg.gif",
+    new Answer("be honest", 2),
+    new Answer("just using the bathroom!", 20),
+    "cover"
+  ),
+  20: new Screen(
+    "Level 7",
+    "You befriend this woman and find a home here, but want something new, you go searching for portals",
+    "https://i.pinimg.com/originals/48/8a/94/488a947b11a00c4768ab84938bec1598.gif",
+    new Answer("leave in the night", 20),
+    new Answer("stay a while", 21),
+    "cover"
+  ),
+  21: new Screen(
+    "Level 8",
+    "You can choose between the blue portal and the yellow",
+    "https://i.pinimg.com/originals/48/8a/94/488a947b11a00c4768ab84938bec1598.gif",
+    new Answer("leave in the night", 2),
+    new Answer("blue", 10),
     "cover"
   ),
 };
