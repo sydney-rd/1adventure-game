@@ -22,7 +22,6 @@
   margin-top: -3rem;
 }
 
-
 button {
   font-family: 'ArcadeClassic', sans-serif;
   color: white;
@@ -99,9 +98,9 @@ button:hover {
 /* TBD */
 @media only screen and (max-width: 768px) {
 
+
   body {
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: black;
   }
 
   .text {
@@ -110,7 +109,7 @@ button:hover {
   }
 
   .main_title {
-    font-size: .7rem;
+    font-size: .4rem;
   }
 
   button {
