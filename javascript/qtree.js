@@ -67,7 +67,7 @@ const tree = {
     "because you are kind to other life forces, they allow you to choose which planet you will be dropped off in",
     "https://raw.githubusercontent.com/sydney-rd/text-adventure-game/main/assets/bgImages/Level5IMG.gif",
     new Answer("neptune", 7),
-    new Answer("jupiter", 6), // change number
+    new Answer("earth", 18),
     "contain"
   ),
   7: new Screen(
@@ -75,7 +75,7 @@ const tree = {
     "you have arrived in neptune, the bluest planet of all. i hope you know how to swim VERY well...",
     "https://raw.githubusercontent.com/sydney-rd/text-adventure-game/main/assets/bgImages/Level6IMG.gif",
     new Answer("Im a great swimmer", 8),
-    new Answer("Not the best swimmer", 9), // change number
+    new Answer("Not the best swimmer", 2),
     "cover"
   ),
   8: new Screen(
@@ -96,7 +96,7 @@ const tree = {
   ),
   10: new Screen(
     "Level 9",
-    "whoops! something sucked you into another parallel and you ended up in an underwater world!",
+    "whoops! you are sucked into another parallel and you ended up in an underwater world!",
     "https://raw.githubusercontent.com/sydney-rd/text-adventure-game/main/assets/bgImages/Level9IMG.gif",
     new Answer("swim to the top!", 2), // restart
     new Answer("succumb", 11),
@@ -106,17 +106,9 @@ const tree = {
     "Level 10",
     "you say your goodbyes as 60s pass. inevitably, you breathe in. wait... you can breathe underwater. you now can live your best life",
     "https://raw.githubusercontent.com/sydney-rd/text-adventure-game/main/assets/bgImages/Level10IMG.gif",
-    new Answer("restart", 1), // restarts game
-    new Answer("escape", 12),
+    new Answer("You Escaped"),
+    new Answer("Thanks for Playing"),
     "100% 110%"
-  ),
-  12: new Screen(
-    "\n",
-    "\n",
-    "https://raw.githubusercontent.com/sydney-rd/text-adventure-game/main/assets/bgImages/GameOver.gif",
-    new Answer("high scores"),
-    new Answer("restart", 1),
-    "100% 100%"
   ),
   13: new Screen(
     "Level 3",
@@ -138,16 +130,16 @@ const tree = {
     "Level 5",
     "before you make your next move, a woman comes up to you. she invites you into her home for dinner",
     "https://raw.githubusercontent.com/sydney-rd/text-adventure-game-javascript/main/assets/bgImages/Level5BIMG.gif",
-    new Answer("no thanks", 18),
+    new Answer("no thanks", 1),
     new Answer("i am hungry...", 19),
     "cover"
   ),
   16: new Screen(
     "Level 5",
-    "you now have enemies! they kick you out of the ship",
+    "you now have enemies! they kick you out of the ship and you land in an earth city. do you grab earth food next or buy new clothes?",
     "https://i.gifer.com/LEk6.gif",
-    new Answer("hi"),
-    new Answer("hi"),
+    new Answer("clothes", 18),
+    new Answer("food", 18),
     "100% 110%"
   ),
   17: new Screen(
@@ -158,28 +150,60 @@ const tree = {
     new Answer("walk towards", 4),
     "cover"
   ),
+  18: new Screen(
+    "Level 6",
+    "you walk through this earth city and meet a strange woman. do you go with her or keep exploring?",
+    "https://e0.pxfuel.com/wallpapers/589/540/desktop-wallpaper-a-city-at-night-pixel-art-edition-1920-%C3%97-1080-thumbnail.jpg",
+    new Answer("woman", 20),
+    new Answer("explore", 22),
+    "cover"
+  ),
   19: new Screen(
     "Level 6",
-    "she lets you stay over but you decide to sneak out. uh-oh, you are too noisy and she wakes up...and she's not happy ",
+    "she lets you stay over but you decide to sneak out. uh-oh, you are too noisy and she wakes up...and she's not happy",
     "https://raw.githubusercontent.com/sydney-rd/text-adventure-game-javascript/main/assets/bgImages/Level6Bimg.gif",
     new Answer("be honest", 2),
-    new Answer("just using the bathroom!", 20),
+    new Answer("using the bathroom!", 20),
     "cover"
   ),
   20: new Screen(
     "Level 7",
-    "You befriend this woman and find a home here, but want something new, you go searching for portals",
+    "you befriend this woman and find a home here, but want something new, you go searching for portals, do you go towards the mountains or volcanos",
     "https://i.pinimg.com/originals/48/8a/94/488a947b11a00c4768ab84938bec1598.gif",
-    new Answer("leave in the night", 20),
-    new Answer("stay a while", 21),
+    new Answer("mountains", 21),
+    new Answer("volcano's", 21),
     "cover"
   ),
   21: new Screen(
     "Level 8",
-    "You can choose between the blue portal and the yellow",
-    "https://i.pinimg.com/originals/48/8a/94/488a947b11a00c4768ab84938bec1598.gif",
-    new Answer("leave in the night", 2),
-    new Answer("blue", 10),
+    "after sometime you come across two portals, a blue, breezy portal, and a red, fiery portal. which do you take",
+    "https://cdnb.artstation.com/p/assets/images/images/047/517/381/original/inkpendude-portal-calm.gif?1647794880",
+    new Answer("red portal", 2),
+    new Answer("blue portal", 10),
+    "cover"
+  ),
+  22: new Screen(
+    "Level 7",
+    "you continue to walk through the city and decide if you should search for portals to try and get back to space",
+    "https://i.pinimg.com/originals/3e/c8/69/3ec869e51eef38eac2d159030ecf1784.gif",
+    new Answer("stay here", 23),
+    new Answer("find a portal", 21),
+    "cover"
+  ),
+  23: new Screen(
+    "Level 8",
+    "you decide to make a new home for yourself in this new city, cherishing your memories. as months pass you become lonely, lets get adopt a pet! will you choose a dog or an exotic pet",
+    "https://thumbs.gfycat.com/AgileHiddenAfricanhornbill-max-1mb.gif",
+    new Answer("dog", 24),
+    new Answer("exotic pet", 2),
+    "cover"
+  ),
+  24: new Screen(
+    "Level 9",
+    "congratulations! you and your dog live happily ever after together in your new home",
+    "https://i.pinimg.com/736x/d4/3f/a5/d43fa5669ad2f105c18f1eeddf94297e--gifs-anim%C3%A9s-animated-gifs.jpg",
+    new Answer("You Escaped"),
+    new Answer("Thanks for Playing"),
     "cover"
   ),
 };
