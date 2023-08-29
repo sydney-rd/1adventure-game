@@ -50,9 +50,9 @@ button:hover {
   transform: translate(-50%, -50%);
 }
 
-.glitch {
+.text.glitch {
   animation: glitch 0.5s linear infinite;
-  overflow: hidden;
+  text-shadow: 3px 3px 3px red;
 }
 
 @keyframes glitch {

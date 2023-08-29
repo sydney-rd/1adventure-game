@@ -254,9 +254,9 @@ displayScreen(screen_id);
 
 button1.addEventListener("click", (e) => {
   if (button1.innerText == "cancel") {
-    document.body.classList.add("glitch");
+    document.querySelector(".text").classList.add("glitch");
     setTimeout(() => {
-      document.body.classList.remove("glitch");
+      document.querySelector(".text").classList.remove("glitch");
     }, 1000);
     score = 0;
   } else {
