@@ -3,11 +3,9 @@
 I created Escape the Labyrinth Text Adventure Game, which was inspired by bright and punchy pixel art imagery.
 See where your journey leads you and try to escape with the lowest score possible!
 
-<strong>Please note - this projects story, visuals, and code is still being improved and perfected!</strong>
-
 # How to Play
 
-A fun, small detail to notice is when you are on the home screen, Escape the Labyrinth screen will <strong>glitch</strong> if you press "cancel." This is because once you are in the game you cannot quit...hehe
+A fun, small detail to notice is when you are on the home screen, Escape the Labyrinth screen will <strong>glitch</strong> if you press "cancel." This is because once you are in the game you cannot quit...!
 
 # Run
 

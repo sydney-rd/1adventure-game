@@ -59,7 +59,7 @@ const tree = {
     "aliens abduct you and you are shooting in the sky. do you befriend them?",
     "https://raw.githubusercontent.com/sydney-rd/text-adventure-game/main/assets/bgImages/Level4IMG.gif",
     new Answer("best friends", 6),
-    new Answer("enemies", 16), // change number, floating in space
+    new Answer("enemies", 16),
     "100% 100%"
   ),
   6: new Screen(
@@ -90,15 +90,15 @@ const tree = {
     "Level 8",
     "you put your ego aside and slowly leave the ship. you notice the raging waters. you ask your friends for help...",
     "https://raw.githubusercontent.com/sydney-rd/text-adventure-game/main/assets/bgImages/Level8IMG.gif",
-    new Answer("take a submarine", 10), // go to same storyline
-    new Answer("grab scuba gear", 10), // go to same storyline
+    new Answer("take a submarine", 10),
+    new Answer("grab scuba gear", 10),
     "100% 100%"
   ),
   10: new Screen(
     "Level 9",
     "whoops! you are sucked into another parallel and you ended up in an underwater world!",
     "https://raw.githubusercontent.com/sydney-rd/text-adventure-game/main/assets/bgImages/Level9IMG.gif",
-    new Answer("swim to the top!", 2), // restart
+    new Answer("swim to the top!", 2),
     new Answer("succumb", 11),
     "cover"
   ),

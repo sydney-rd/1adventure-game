@@ -25,7 +25,6 @@
   width: 100%;
 }
 
-
 button {
   font-family: 'ArcadeClassic', sans-serif;
   color: white;
@@ -102,7 +101,6 @@ button:hover {
   }
 }
 
-/* TBD */
 @media only screen and (max-width: 768px) {
 
   html,
