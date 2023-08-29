@@ -24,7 +24,7 @@ class Answer {
 const tree = {
   1: new Screen(
     "escape the labyrinth",
-    "you can no longer escape",
+    "Choose wisely - A single misstep will restart your journey.",
     "https://raw.githubusercontent.com/sydney-rd/text-adventure-game/main/assets/bgImages/starterIMG.gif",
     new Answer("cancel", 1),
     new Answer("start", 2),
