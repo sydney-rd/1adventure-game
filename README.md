@@ -5,7 +5,7 @@ See where your journey leads you and try to escape with the lowest score possibl
 
 # How to Play
 
-A fun, small detail to notice is when you are on the home screen, Escape the Labyrinth screen will <strong>glitch</strong> if you press "cancel." This is because once you are in the game you cannot quit...!
+A fun, small detail to notice is when you are on the home screen, there will be a <strong>glitch</strong> if you press "cancel." This is because once you are in the game you cannot quit...!
 
 Be careful with your choices, if you choose the wrong option, you will start at the beginning!
 
